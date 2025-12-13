@@ -13,6 +13,9 @@ public class CharacterSelector : MonoBehaviour
 
     void Start()
     {
+        hueSlider.value = 1f;
+        satSlider.value = 0f;
+        valSlider.value = 1f;
     }
 
     public void SelectCharacter(int index)
