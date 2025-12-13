@@ -73,7 +73,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Logo1DecalMask:
-        m_Texture: {fileID: 2800000, guid: ad25400f4ed490c46a9dcd3f46c109c3, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8fa529d78a85d724e8a112fbdb359585, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Logo2DecalMask:
@@ -81,7 +81,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LogoAreaMask:
-        m_Texture: {fileID: 2800000, guid: e50628811b7b5414785b6ce90ca633df, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2fb57415c9fea0d418cc447d8093c033, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -142,7 +142,9 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _Logo1Enable: 1
     - _Logo1Size: 1
+    - _Logo2Enable: 0
     - _Logo2Size: 1
     - _Metallic: 0
     - _Mode: 0
@@ -189,10 +191,12 @@ Material:
     - _Logo1Color1: {r: 0, g: 0.9564261, b: 1, a: 0}
     - _Logo1Color2: {r: 1, g: 0, b: 0.7951088, a: 0}
     - _Logo1Color3: {r: 0.9647059, g: 1, b: 0, a: 0}
-    - _Logo1Offset: {r: 1.5, g: 0.94, b: -0.98, a: 0}
+    - _Logo1Color4: {r: 0.3018868, g: 0.041295845, b: 0.18761793, a: 0}
+    - _Logo1Offset: {r: 1, g: 1.58, b: 0, a: 0}
     - _Logo2Color1: {r: 0, g: 0.007843138, b: 1, a: 0}
     - _Logo2Color2: {r: 0.03529412, g: 1, b: 0, a: 0}
     - _Logo2Color3: {r: 0.8901961, g: 0.6078432, b: 0, a: 0}
+    - _Logo2Color4: {r: 0, g: 0, b: 0, a: 0}
     - _Logo2Offset: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
