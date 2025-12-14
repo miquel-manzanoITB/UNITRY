@@ -65,7 +65,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Logo1DecalMask:
-        m_Texture: {fileID: 2800000, guid: e50628811b7b5414785b6ce90ca633df, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Logo2DecalMask:
@@ -73,7 +73,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LogoAreaMask:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e50628811b7b5414785b6ce90ca633df, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -161,24 +161,24 @@ Material:
     - Color_f6b3418928dc448fa97dd75eff33b63b_1: {r: 0, g: 0.007843138, b: 1, a: 0}
     - Vector4_3: {r: 0.5, g: 0.5, b: 0, a: 0}
     - Vector4_7c797b29c5764619a04c4db05b872e1e: {r: 1.5, g: 1.5, b: -0.08, a: 0}
-    - _BaseColor: {r: 0.8867924, g: 0.8606677, b: 0.7152901, a: 1}
+    - _BaseColor: {r: 0.8862745, g: 0.85882354, b: 0.7137255, a: 1}
     - _BlackColorThreshold: {r: 0.01, g: 0.01, b: 0.01, a: 0.01}
-    - _Color: {r: 0.9063317, g: 0.9063317, b: 0.9063317, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _Logo1Color1: {r: 0, g: 0.9564261, b: 1, a: 0}
-    - _Logo1Color2: {r: 1, g: 0, b: 0.7951088, a: 0}
-    - _Logo1Color3: {r: 0.9647059, g: 1, b: 0, a: 0}
-    - _Logo1Color4: {r: 1, g: 0, b: 0, a: 0}
-    - _Logo1Offset: {r: 1.5, g: 1.5, b: -0.08, a: 0}
-    - _Logo2Color1: {r: 0, g: 0.007843138, b: 1, a: 0}
-    - _Logo2Color2: {r: 0.03529412, g: 1, b: 0, a: 0}
-    - _Logo2Color3: {r: 0.8901961, g: 0.6078432, b: 0, a: 0}
-    - _Logo2Color4: {r: 0, g: 0, b: 0, a: 0}
+    - _Logo1Color1: {r: 0, g: 0.9564261, b: 1, a: 1}
+    - _Logo1Color2: {r: 1, g: 0, b: 0.7951088, a: 1}
+    - _Logo1Color3: {r: 0.9647059, g: 1, b: 0, a: 1}
+    - _Logo1Color4: {r: 1, g: 0, b: 0, a: 1}
+    - _Logo1Offset: {r: 1.5, g: 1.5, b: -0.25, a: -0.25}
+    - _Logo2Color1: {r: 1, g: 0.007843138, b: 0, a: 1}
+    - _Logo2Color2: {r: 0, g: 1, b: 0, a: 1}
+    - _Logo2Color3: {r: 0, g: 0, b: 1, a: 1}
+    - _Logo2Color4: {r: 0, g: 0, b: 0, a: 1}
     - _Logo2Offset: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &3594663528934248743
+--- !u!114 &3672457198439617554
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

@@ -28,7 +28,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mSweater
-    second: {fileID: 2100000, guid: 0246db1fb901af0428ee95b3c09737f6, type: 2}
+    second: {fileID: 2100000, guid: 3a780ec7ab4ee4542933d0c15a67bee7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
