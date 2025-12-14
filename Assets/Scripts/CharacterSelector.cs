@@ -5,17 +5,23 @@ public class CharacterSelector : MonoBehaviour
 {
     public GameObject[] characters;
     public Renderer[] shirtRenderers;
-    public Slider hueSlider;
-    public Slider satSlider;
-    public Slider valSlider;
+    public Renderer[] pantsRenderers;
 
-    private Material activeShirtMaterial;
+    public Slider shirtHue;
+    public Slider shirtSat;
+    public Slider shirtVal;
+
+    public Slider pantsHue;
+    public Slider pantsSat;
+    public Slider pantsVal;
+
+    private Material currentShirtMat;
+    private Material currentPantsMat;
 
     void Start()
     {
-        hueSlider.value = 1f;
-        satSlider.value = 1f;
-        valSlider.value = 1f;
+        shirtHue.value = 1f; shirtSat.value = 1f; shirtVal.value = 1f;
+        pantsHue.value = 0.7f; pantsSat.value = 1f; pantsVal.value = 1f;
     }
 
     public void SelectCharacter(int index)
@@ -31,21 +37,31 @@ public class CharacterSelector : MonoBehaviour
             {
                 if (i < shirtRenderers.Length && shirtRenderers[i] != null)
                 {
-                    activeShirtMaterial = shirtRenderers[i].material;
+                    currentShirtMat = shirtRenderers[i].material;
+                    UpdateShirtColor();
+                }
 
-                    UpdateCharacterColor();
+                if (i < pantsRenderers.Length && pantsRenderers[i] != null)
+                {
+                    currentPantsMat = pantsRenderers[i].material;
+                    UpdatePantsColor();
                 }
             }
         }
     }
-
-    public void UpdateCharacterColor()
+    public void UpdateShirtColor()
     {
-        if (activeShirtMaterial == null) return;
+        if (currentShirtMat == null) return;
 
-        Color newColor = Color.HSVToRGB(hueSlider.value, satSlider.value, valSlider.value);
+        Color newColor = Color.HSVToRGB(shirtHue.value, shirtSat.value, shirtVal.value);
+        currentShirtMat.SetColor("_BaseColor", newColor); //.color = newColor;
+    }
 
-        activeShirtMaterial.color = newColor;
+    public void UpdatePantsColor()
+    {
+        if (currentPantsMat == null) return;
 
+        Color newColor = Color.HSVToRGB(pantsHue.value, pantsSat.value, pantsVal.value);
+        currentPantsMat.SetColor("_BaseColor", newColor);
     }
 }
