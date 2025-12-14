@@ -1738,6 +1738,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832736912}
   m_CullTransparentMesh: 1
+--- !u!137 &912720574 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4800545675622748477, guid: ac817617b24ef284a98c178d1127c331, type: 3}
+  m_PrefabInstance: {fileID: 722320317}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &945175562
 GameObject:
   m_ObjectHideFlags: 0
@@ -3071,6 +3076,10 @@ MonoBehaviour:
   - {fileID: 757768895}
   - {fileID: 1162750837}
   - {fileID: 1430546922}
+  shirtRenderers:
+  - {fileID: 757768898}
+  - {fileID: 912720574}
+  - {fileID: 1430546924}
   hueSlider: {fileID: 1959314199}
   satSlider: {fileID: 945175563}
   valSlider: {fileID: 1113126620}

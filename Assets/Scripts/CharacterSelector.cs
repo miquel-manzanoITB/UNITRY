@@ -4,17 +4,17 @@ using UnityEngine.UI;
 public class CharacterSelector : MonoBehaviour
 {
     public GameObject[] characters;
-
+    public Renderer[] shirtRenderers;
     public Slider hueSlider;
     public Slider satSlider;
     public Slider valSlider;
 
-    private Material activeMaterial;
+    private Material activeShirtMaterial;
 
     void Start()
     {
         hueSlider.value = 1f;
-        satSlider.value = 0f;
+        satSlider.value = 1f;
         valSlider.value = 1f;
     }
 
@@ -25,15 +25,13 @@ public class CharacterSelector : MonoBehaviour
         for (int i = 0; i < characters.Length; i++)
         {
             bool isActive = (i == index);
-            characters[i].SetActive(isActive);
+            if (characters[i] != null) characters[i].SetActive(isActive);
 
             if (isActive)
             {
-                Renderer rend = characters[i].GetComponentInChildren<Renderer>();
-
-                if (rend != null)
+                if (i < shirtRenderers.Length && shirtRenderers[i] != null)
                 {
-                    activeMaterial = rend.material;
+                    activeShirtMaterial = shirtRenderers[i].material;
 
                     UpdateCharacterColor();
                 }
@@ -43,11 +41,11 @@ public class CharacterSelector : MonoBehaviour
 
     public void UpdateCharacterColor()
     {
-        if (activeMaterial == null) return;
+        if (activeShirtMaterial == null) return;
 
         Color newColor = Color.HSVToRGB(hueSlider.value, satSlider.value, valSlider.value);
 
-        activeMaterial.color = newColor;
+        activeShirtMaterial.color = newColor;
 
     }
 }
