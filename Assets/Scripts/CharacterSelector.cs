@@ -18,6 +18,14 @@ public class CharacterSelector : MonoBehaviour
     private Material currentShirtMat;
     private Material currentPantsMat;
 
+    void Awake()
+    {
+        foreach (GameObject character in characters)
+        {
+            character.SetActive(false);
+        }
+    }
+    
     void Start()
     {
         shirtHue.value = 1f; shirtSat.value = 1f; shirtVal.value = 1f;

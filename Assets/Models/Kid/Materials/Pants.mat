@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Material.001
+  m_Name: Pants
   m_Shader: {fileID: -6465566751694194690, guid: fe013f85b62b02149a550ce676e60d9b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -133,9 +133,9 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.9063354, g: 0, b: 0.052922927, a: 1}
+    - _BaseColor: {r: 0, g: 0.04502905, b: 0.9063354, a: 1}
     - _BlackColorThreshold: {r: 0.01, g: 0.01, b: 0.01, a: 0.01}
-    - _Color: {r: 0.9063354, g: 0, b: 0.052922904, a: 1}
+    - _Color: {r: 0, g: 0.04502903, b: 0.9063354, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _Logo1Color1: {r: 0, g: 0.9564261, b: 1, a: 0}
     - _Logo1Color2: {r: 1, g: 0, b: 0.7951088, a: 0}
@@ -150,7 +150,7 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &408644384620762152
+--- !u!114 &7485955726919765506
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
